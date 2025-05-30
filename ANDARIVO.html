@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ANDARIVO</title>
+        <link rel="icon" href="C:\Users\david\Downloads\ZAPATOS\Sello .jpg" type="image/jpg">
+        <link rel="stylesheet" href="ESTILO.css">
+    </head>
+    <body>
+        <header>
+            <H1>ANDARIVO</H1>
+            <P>ESTILO QUE DEJA HUELLA</P>
+            <input type="search" placeholder="Buscar..." class="busqueda-decorativa" ENABLE>
+            <img src="C:\Users\david\Downloads\ZAPATOS\Logo principal .png" width="200">
+        </header>
+  
+  <div id="carrito">
+    <strong>🛒 Carrito:</strong>
+    <ul id="lista-carrito"></ul>
+  </div>
+
+    <section class="productos">
+        <div class="producto">
+            <img src="C:\Users\david\Downloads\ZAPATOS\images.jpg">
+            <h3>Air Jordan 4 Retro "Fear"</h3>
+            <p>Q1,808.00</p>
+            <button onclick="agregarAlCarrito('Air Jordan 4 Retro Fear')">Comprar</button>
+         </div>
+        <div class="producto">
+            <img src="C:\Users\david\Downloads\ZAPATOS\PU388992-03-6.jpg">
+            <h3>Puma Slipstream</h3>
+            <p>Q1,580.00</p>
+            <button onclick="agregarAlCarrito('Puma Slipstream')">Comprar</button>
+         </div>
+        <div class="producto">
+            <img src="C:\Users\david\Downloads\ZAPATOS\converse-chuck-70-hi-egret-black-2-red-a08863c.jpg">
+            <h3>Converse Chuck Taylor All Star Platform Layer</h3>
+            <p>Q758.00</p>
+            <button onclick="agregarAlCarrito('Converse Chuck Taylor All Star Platform Layer')">Comprar</button>
+         </div>
+        <div class="producto">
+            <img src="C:\Users\david\Downloads\ZAPATOS\pngwing.com (5).png">
+            <h3>Nike Air Force 1</h3>
+            <p>Q1,400.00</p>
+            <button onclick="agregarAlCarrito('Nike Air Force 1')">Comprar</button>
+         </div>
+        <div class="producto">
+            <img src="C:\Users\david\Downloads\ZAPATOS\pngwing.com (6).png">
+            <h3>Old Skool Classic Skate Shoes</h3>
+            <p>Q855.00</p>
+         <button onclick="agregarAlCarrito('Old Skool Classic Skate Shoes')">Comprar</button>
+         </div> 
+        <div class="producto">
+            <img src="C:\Users\david\Downloads\ZAPATOS\pngwing.com (7.png">
+            <h3>Adidas Superstar</h3>
+            <p>Q1,215.00</p>
+            <button onclick="agregarAlCarrito('Adidas Superstar')">Comprar</button>
+         </div> 
+        <div class="producto">
+            <img src="C:\Users\david\Downloads\ZAPATOS\images (1).jpg">
+            <h3>NewBalance 574 EGG</h3>
+            <p>Q1,050.00</p>
+            <button onclick="agregarAlCarrito('NewBalance 574 EGG')">Comprar</button>
+         </div> 
+        <div class="producto">
+            <img src="C:\Users\david\Downloads\ZAPATOS\sneakers-gris-estilo-ie4501-marca-reebok-cl-sico-147016_GRIS_1.jpg">
+            <h3>Reebok Flexagon Energy Tr 4</h3>
+            <p>Q660.00</p>
+        <button onclick="agregarAlCarrito('Reebok Flexagon Energy Tr 4')">Comprar</button>
+         </div>                                    
+    </section>     
+  <footer>
+    <p>&copy; 2025 Tienda de Zapatos. Todos los derechos reservados.</p>
+  </footer>
+  
+
+  <script>
+    function agregarAlCarrito(nombreProducto) {
+      const lista = document.getElementById("lista-carrito");
+      const item = document.createElement("li");
+      item.textContent = nombreProducto;
+      lista.appendChild(item);
+      alert(nombreProducto + " añadido al carrito");
+    }
+  </script>
+
+    </body>
+</html>
